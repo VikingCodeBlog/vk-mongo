@@ -1,0 +1,12 @@
+{
+  "name": "vkmongo",
+  "version": "0.0.8",
+  "description": "mongo lib for viking apps",
+  "main": "index.js",
+  "scripts": {},
+  "author": "Codigo Vikingo",
+  "license": "MIT",
+  "dependencies": {
+    "mongoose": "^5.12.13"
+  }
+}
