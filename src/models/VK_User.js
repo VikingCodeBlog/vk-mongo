@@ -18,6 +18,10 @@ const UserSchema = new Schema({
         type: String,
         required: true
     },
+    validated: {
+        type: Boolean,
+        required: true
+    },
 });
 
 module.exports = mongoose.model('VK_User', UserSchema);
