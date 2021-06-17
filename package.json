@@ -1,6 +1,6 @@
 {
   "name": "vkmongo",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "mongo lib for viking apps",
   "main": "index.js",
   "scripts": {},
