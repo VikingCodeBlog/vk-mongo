@@ -4,6 +4,4 @@ const AppSchema = new mongoose.Schema({
     name: String,
 });
 
-const VK_App = mongoose.model('VK_App', AppSchema);
-
-module.exports = VK_App;
+module.exports = mongoose.model('VK_App', AppSchema);

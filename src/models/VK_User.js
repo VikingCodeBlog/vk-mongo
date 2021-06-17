@@ -20,6 +20,4 @@ const UserSchema = new Schema({
     },
 });
 
-const VK_User = mongoose.model('VK_User', UserSchema);
-
-module.exports = VK_User;
+module.exports = mongoose.model('VK_User', UserSchema);
