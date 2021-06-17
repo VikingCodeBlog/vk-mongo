@@ -16,5 +16,5 @@ const { VK_User, VK_UserData } = require('vkmongo/models');
 ```
 ### Usar helpers  
 ```js 
-const { mongooseTypes } = require('vkmongo/helpers/types');
+const { mongooseTypes } = require('vkmongo/helpers');
 ```
