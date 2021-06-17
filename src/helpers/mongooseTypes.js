@@ -1,4 +1,2 @@
 const mongoose = require('mongoose');
-module.exports = {
-    mongooseTypes: mongoose.Types
-}
+module.exports = mongoose.Types;

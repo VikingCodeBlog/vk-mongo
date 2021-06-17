@@ -1,12 +1,11 @@
 const path = require('path');
 const fs = require('fs');
+const ROUTE = '/src/helpers/';
 
-const directoryPath = path.join(__dirname, '/src/helpers');
+const directoryPath = path.join(__dirname, ROUTE);
 
-const exportHelpers = {};
+const toExport = {};
 const files = fs.readdirSync(directoryPath);
-files.forEach(function (file) {
-  exportHelpers[file.replace('.js', '')] = require(`./src/helpers/${file}`)
-});
+files.forEach((file) => toExport[file.replace('.js', '')] = require(`.${ROUTE}${file}`));
 
-module.exports = exportHelpers;
+module.exports = toExport;
