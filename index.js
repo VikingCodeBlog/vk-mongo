@@ -11,8 +11,8 @@ mongoose.connect(
 
 const db = mongoose.connection;
 
-db.on('error', console.error('Error al conectar mongo'));
+db.on('error', console.error.bind(console, 'Error al conectar mongo'));
 
-db.once('open', console.log('Mongo conectado'));
+db.once('open', () => console.log('Mongo conectado'));
 
 module.exports = db;

@@ -9,4 +9,4 @@ files.forEach(function (file) {
   exportHelpers[file.replace('.js', '')] = require(`./src/helpers/${file}`)
 });
 
-module.exports = exportTypes;
+module.exports = exportHelpers;
