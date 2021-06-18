@@ -9,7 +9,10 @@ const UserDataSchema = new Schema({
         required: true
     },
     telf: String,
-    lastConnection: Date
+    lastConnection: Date,
+    validatedIPs: [{
+        type: String
+    }],
 });
 
 module.exports = mongoose.model('VK_UserData', UserDataSchema);
